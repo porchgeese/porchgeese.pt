@@ -1,0 +1,32 @@
+<html>
+<head></head>
+<body>
+<div id="container">
+    <div id="text-container">
+        <h1>Porch Geese</h1>
+        <img id="logo" src="logo.png" alt="">
+        <br>
+        <span>(under construction)</span>
+    </div>
+
+</div>
+</body>
+<style>
+    #text-container {
+        width: 700px;
+        margin: auto;
+        text-align: center;
+    }
+    #logo {
+        width: 300px;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count:infinite;
+    }
+    @keyframes example {
+        0% {transform: translate(-200px, 0px);}
+        50% {transform: translate(200px, 0px) rotateY(180deg);}
+        100% {transform: translate(-200px, 0px);}
+    }
+</style>
+</html>
