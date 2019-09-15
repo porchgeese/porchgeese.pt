@@ -1,33 +1,48 @@
 <html>
 <head>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Porchgeese - Ltd</title>
+    <link rel="icon" href="logo.png">
 </head>
+
 <body>
-<div id="container">
-    <div id="text-container">
-        <h1>Porch Geese</h1>
-        <img id="logo" src="logo.png" alt="">
+    <div style="text-align: center; margin-top: calc(50vh - 57px)">
+        <span id="company-name">
+            <i class="icon ion-md-code"> </i>
+            <span class="text">porch geese</span>
+        </span>
         <br>
-        <span>(under construction)</span>
+        <span class="text" id="tagline">software development</span>
+        <div id="footer" class="text">
+            <span id="phone"><i class="icon ion-md-call"> </i> +44 07716617737</span>
+            <span id="email"><i class="icon ion-md-mail"> </i> info@porchgeese.pt</span>
+        </div>
     </div>
-</div>
 </body>
 <style>
-    #text-container {
-        width: 700px;
-        margin: auto;
-        text-align: center;
+    #tagline {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
     }
-    #logo {
-        width: 300px;
-        animation-name: example;
-        animation-duration: 4s;
-        animation-iteration-count:infinite;
+    body {
+        background: rgba(0, 0, 0, .65) url("./background.jpeg");;
+        background-blend-mode: darken;
+        color: cadetblue;
+        background-image:
     }
-    @keyframes example {
-        0% {transform: translate(-200px, 0px);}
-        50% {transform: translate(200px, 0px) rotateY(180deg);}
-        100% {transform: translate(-200px, 0px);}
+    .text {
+        font-family: 'Open Sans', sans-serif;
+    }
+    #footer {
+        margin-top: 25px;
+    }
+    #footer span {
+        padding: 10px;
+    }
+    #company-name {
+        font-weight: bold;
+        font-size: 3rem;
     }
 </style>
 </html>
