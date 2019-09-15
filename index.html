@@ -9,7 +9,7 @@
 <body>
     <div style="text-align: center; margin-top: calc(50vh - 57px)">
         <span id="company-name">
-            <i class="icon ion-md-code"> </i>
+            <i class="icon ion-md-code" style="color: white"> </i>
             <span class="text">porch geese</span>
         </span>
         <br>
@@ -26,10 +26,11 @@
         margin-bottom: 20px;
     }
     body {
-        background: rgba(0, 0, 0, .65) url("./background.jpeg");;
-        background-blend-mode: darken;
-        color: cadetblue;
-        background-image:
+        background: rgba(0, 0, 0, .25) url("./background.jpeg");;
+        background-blend-mode: luminosity;
+        color: black;
+        background-size: cover;
+        ;
     }
     .text {
         font-family: 'Open Sans', sans-serif;
@@ -41,8 +42,14 @@
         padding: 10px;
     }
     #company-name {
+        margin-left: -35px;
         font-weight: bold;
         font-size: 3rem;
+    }
+    #company-name i {
+        color: white;
+        position: relative;
+        top: 3px;
     }
 </style>
 </html>
